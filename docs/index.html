@@ -318,6 +318,101 @@
     <script src="/static/js/maps.js"></script>
     <!--Main-active-JS-->
     <script src="/static/js/main.js"></script>
+    <!-- Popup "Presto disponibile" per Google Play (app Android non ancora pubblicata) -->
+    <style>
+        .gp-soon-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(34, 35, 59, 0.75);
+            z-index: 100000000;
+            display: none;
+            opacity: 0;
+            -webkit-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease;
+        }
+        .gp-soon-overlay.gp-soon-show {
+            display: block;
+            opacity: 1;
+        }
+        .gp-soon-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 40px 45px;
+            max-width: 90%;
+            width: 420px;
+            text-align: center;
+            -webkit-box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4);
+        }
+        .gp-soon-box h4 {
+            color: #22233b;
+            margin: 0 0 12px;
+        }
+        .gp-soon-box p {
+            color: #7e7e7e;
+            margin: 0 0 25px;
+        }
+        .gp-soon-box .gp-soon-close {
+            display: inline-block;
+            padding: 12px 40px;
+            background-color: #1EA9FE;
+            color: #ffffff;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .gp-soon-box .gp-soon-close:hover {
+            background-color: #22233b;
+        }
+    </style>
+    <script>
+        (function () {
+            var overlay = null;
+            function buildOverlay() {
+                overlay = document.createElement('div');
+                overlay.className = 'gp-soon-overlay';
+                overlay.innerHTML = '<div class="gp-soon-box">' +
+                    '<h4>Presto disponibile</h4>' +
+                    '<p>L\'app iMeditazione sarà presto disponibile su Google Play.</p>' +
+                    '<button type="button" class="gp-soon-close">Ok</button>' +
+                    '</div>';
+                overlay.addEventListener('click', function (e) {
+                    if (e.target === overlay || e.target.className === 'gp-soon-close') {
+                        hideOverlay();
+                    }
+                });
+                document.addEventListener('keydown', function (e) {
+                    if (e.keyCode === 27) { hideOverlay(); }
+                });
+                document.body.appendChild(overlay);
+            }
+            function showOverlay() {
+                if (!overlay) { buildOverlay(); }
+                overlay.style.display = 'block';
+                void overlay.offsetWidth;
+                overlay.className = 'gp-soon-overlay gp-soon-show';
+            }
+            function hideOverlay() {
+                if (overlay) { overlay.className = 'gp-soon-overlay'; overlay.style.display = ''; }
+            }
+            var links = document.querySelectorAll('a[href*="play.google.com"]');
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', function (e) {
+                    e.preventDefault();
+                    showOverlay();
+                });
+            }
+        })();
+    </script>
 </body>
 
 </html>
