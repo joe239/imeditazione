@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#FCFBF8" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#211F1C" media="(prefers-color-scheme: dark)">
-    <meta name="description" content="iMeditazione: meditazioni guidate, tecniche e un percorso di 40 giorni per imparare a meditare, gratuitamente e offline.">
-    <title>iMeditazione — Impara a meditare</title>
+    <meta name="theme-color" content="#FCFBF8">
+    <meta name="description" content="Gratis, senza registrazione, e completamente offline. Meditazioni guidate in italiano, tecniche brevi e 40 storie quotidiane da ascoltare prima della pratica meditativa.">
+    <title>iMeditazione — Meditazioni guidate in italiano</title>
     <link rel="icon" href="/static/images/favicon.ico" sizes="any">
     <link rel="stylesheet" href="/static/landing.css">
     <script src="/static/js/landing.js" defer></script>
@@ -22,8 +21,8 @@
             </a>
             <div class="nav-links">
                 <a href="#come-cominciare">Come cominciare</a>
-                <a href="#anteprime">Anteprime</a>
-                <a href="#funzionalita">Funzionalità</a>
+                <a href="#anteprime">Meditazioni guidate</a>
+                <a href="#funzionalita">Tecniche di meditazione</a>
             </div>
         </nav>
     </header>
@@ -31,24 +30,24 @@
     <main id="contenuto">
         <section class="hero" id="home" aria-labelledby="hero-title">
             <div class="hero-inner shell">
+                <div class="hero-art" aria-hidden="true">
+                    <img src="/static/images/home-header-illustration.png" alt="" width="879" height="448">
+                </div>
                 <div class="hero-copy">
-                    <p class="eyebrow">Meditazione, un passo alla volta</p>
-                    <h1 id="hero-title">Impara a meditare con iMeditazione.</h1>
-                    <p class="hero-lead">Un percorso semplice e tutto in italiano per avvicinarti alla consapevolezza, seguire meditazioni guidate o praticare in autonomia.</p>
-                    <p class="hero-note">Gratis, senza abbonamenti e disponibile offline.</p>
+                    <p class="eyebrow">Salute e benessere</p>
+                    <h1 id="hero-title">iMeditazione</h1>
+                    <p class="hero-lead">Meditazioni guidate in italiano, tecniche brevi e 40 storie quotidiane da ascoltare prima della pratica meditativa.</p>
+                    <p class="hero-note">Gratis, senza registrazione, e completamente offline.</p>
                     <div class="store-row" aria-label="Disponibilità dell'app">
                         <a class="store-badge" href="https://apps.apple.com/app/imeditazione/id1481745712" aria-label="Scarica iMeditazione dall'App Store">
                             <img src="/static/images/app-store.png" alt="" width="30" height="34">
                             <span><small>Scarica su</small><strong>App Store</strong></span>
                         </a>
-                        <span class="store-badge is-disabled" role="link" aria-disabled="true" aria-label="Google Play, non disponibile">
+                        <span class="store-badge is-disabled" role="link" aria-disabled="true" aria-label="Google Play: non disponibile">
                             <img src="/static/images/play-store.png" alt="" width="29" height="32">
-                            <span><small>Non disponibile su</small><strong>Google Play</strong></span>
+                            <span><small>Google Play</small><strong>Non disponibile</strong></span>
                         </span>
                     </div>
-                </div>
-                <div class="hero-art" aria-hidden="true">
-                    <img src="/static/images/home-header-illustration.png" alt="" width="879" height="448">
                 </div>
             </div>
             <svg class="hero-curve" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true">
@@ -56,38 +55,28 @@
             </svg>
         </section>
 
-        <section class="section start-section" id="come-cominciare" aria-labelledby="start-title">
-            <div class="shell split-layout">
-                <div data-reveal>
-                    <p class="eyebrow">Come cominciare</p>
-                    <h2 id="start-title">Trova pochi minuti solo per te.</h2>
-                </div>
-                <div class="start-card" data-reveal>
-                    <p>Trova un luogo tranquillo, indossa gli auricolari e scegli una pratica. Medita ogni giorno, anche per pochi minuti: la costanza conta più della durata.</p>
-                    <div class="start-steps" aria-label="Tre passi per iniziare">
-                        <span><b>1</b>Scegli</span>
-                        <span><b>2</b>Ascolta</span>
-                        <span><b>3</b>Respira</span>
-                    </div>
+        <section class="section gallery-section" id="anteprime" aria-label="Anteprime di iMeditazione">
+            <div class="shell">
+                <div class="screenshot-strip" aria-label="iPhone" data-reveal>
+                    <figure style="--crop-position: 18%;"><img src="/static/images/screenshot-home.png" alt="" width="321" height="401" loading="lazy"><figcaption>Home</figcaption></figure>
+                    <figure style="--crop-position: 31%;"><img src="/static/images/screenshot-sentiero.png" alt="" width="321" height="401" loading="lazy"><figcaption>Il Sentiero</figcaption></figure>
+                    <figure style="--crop-position: 43%;"><img src="/static/images/screenshot-tecniche.png" alt="" width="321" height="401" loading="lazy"><figcaption>Tecniche di meditazione</figcaption></figure>
+                    <figure style="--crop-position: 21%;"><img src="/static/images/screenshot-libera.png" alt="" width="321" height="401" loading="lazy"><figcaption>Meditazione libera</figcaption></figure>
+                    <figure style="--crop-position: 26%;"><img src="/static/images/screenshot-principianti.png" alt="" width="321" height="401" loading="lazy"><figcaption>Per principianti</figcaption></figure>
+                    <figure style="--crop-position: 25%;"><img src="/static/images/screenshot-bambino.png" alt="" width="321" height="401" loading="lazy"><figcaption>Il tuo bambino interiore</figcaption></figure>
+                    <figure style="--crop-position: 26%;"><img src="/static/images/screenshot-player.png" alt="" width="321" height="401" loading="lazy"><figcaption>Gestire lo stress</figcaption></figure>
                 </div>
             </div>
         </section>
 
-        <section class="section gallery-section" id="anteprime" aria-labelledby="gallery-title">
-            <div class="shell">
-                <div class="section-heading" data-reveal>
-                    <p class="eyebrow">Dentro l’app</p>
-                    <h2 id="gallery-title">Uno spazio calmo, sempre con te.</h2>
-                    <p>Scorri le schermate della versione 1.1.0 pubblicata su App Store.</p>
+        <section class="section start-section" id="come-cominciare" aria-labelledby="start-title">
+            <div class="shell split-layout">
+                <div data-reveal>
+                    <p class="eyebrow">Come cominciare</p>
+                    <h2 id="start-title">Scegli un momento di calma.</h2>
                 </div>
-                <div class="screenshot-strip" aria-label="Anteprime di iMeditazione" data-reveal>
-                    <figure><img src="/static/images/screenshot-home.png" alt="Home di iMeditazione con i percorsi disponibili" width="321" height="695" loading="lazy"><figcaption>Home</figcaption></figure>
-                    <figure><img src="/static/images/screenshot-sentiero.png" alt="Introduzione al percorso Il Sentiero" width="321" height="695" loading="lazy"><figcaption>Il Sentiero</figcaption></figure>
-                    <figure><img src="/static/images/screenshot-tecniche.png" alt="Tecniche di meditazione dedicate al respiro" width="321" height="695" loading="lazy"><figcaption>Tecniche</figcaption></figure>
-                    <figure><img src="/static/images/screenshot-libera.png" alt="Timer della meditazione libera" width="321" height="695" loading="lazy"><figcaption>Meditazione libera</figcaption></figure>
-                    <figure><img src="/static/images/screenshot-principianti.png" alt="Lezioni guidate per principianti" width="321" height="695" loading="lazy"><figcaption>Per principianti</figcaption></figure>
-                    <figure><img src="/static/images/screenshot-bambino.png" alt="Meditazioni dedicate al bambino interiore" width="321" height="695" loading="lazy"><figcaption>Bambino interiore</figcaption></figure>
-                    <figure><img src="/static/images/screenshot-player.png" alt="Riproduttore di una meditazione guidata" width="321" height="695" loading="lazy"><figcaption>In ascolto</figcaption></figure>
+                <div class="start-card" data-reveal>
+                    <p>La costanza di pochi minuti ogni giorno vale più di una lunga sessione ogni tanto.</p>
                 </div>
             </div>
         </section>
@@ -95,34 +84,34 @@
         <section class="section features-section" id="funzionalita" aria-labelledby="features-title">
             <div class="shell">
                 <div class="section-heading" data-reveal>
-                    <p class="eyebrow">Funzionalità gratuite</p>
-                    <h2 id="features-title">Scegli la pratica che ti serve oggi.</h2>
+                    <p class="eyebrow">iMeditazione</p>
+                    <h2 id="features-title">Che tu voglia semplicemente impostare un timer o esplorare un percorso guidato, hai a disposizione:</h2>
                 </div>
                 <div class="feature-grid">
                     <article class="feature-card sentiero" data-reveal>
                         <span class="feature-number" aria-hidden="true">40</span>
                         <h3>Il Sentiero</h3>
-                        <p>Un viaggio di 40 giorni: ogni tappa unisce un racconto antico a una meditazione e prende vita su una mappa illustrata.</p>
+                        <p>Quaranta giorni, una tappa al giorno: un racconto antico prima della meditazione. La durata la scegli tu. Una mappa illustrata si svela e si riempie mentre prosegui il percorso.</p>
                     </article>
                     <article class="feature-card tecniche" data-reveal>
                         <span class="feature-number" aria-hidden="true">15</span>
                         <h3>Tecniche di meditazione</h3>
-                        <p>Quindici pratiche brevi in cinque temi: respiro, osservazione, gratitudine, vita quotidiana e movimento.</p>
+                        <p>Quindici pratiche brevi divise in cinque temi: respiro, osservazione, gratitudine, vita quotidiana e movimento.</p>
                     </article>
                     <article class="feature-card principianti" data-reveal>
                         <span class="feature-number" aria-hidden="true">10</span>
                         <h3>Per principianti</h3>
-                        <p>Dieci lezioni guidate per costruire le basi della meditazione con semplicità.</p>
+                        <p>Dieci lezioni guidate per iniziare da zero, un passo alla volta.</p>
                     </article>
                     <article class="feature-card libera" data-reveal>
                         <span class="feature-number feature-range" aria-hidden="true">1–60</span>
                         <h3>Meditazione libera</h3>
-                        <p>Imposta una durata da 1 a 60 minuti, medita in autonomia e lascia che il gong finale segni la conclusione.</p>
+                        <p>Da 1 a 60 minuti, per il tempo che desideri, accompagnato dal suono del gong finale.</p>
                     </article>
                     <article class="feature-card bambino" data-reveal>
                         <span class="feature-number" aria-hidden="true">3</span>
                         <h3>Il tuo bambino interiore</h3>
-                        <p>Tre meditazioni per entrare in contatto con il tuo mondo interiore.</p>
+                        <p>Tre meditazioni dedicate a prenderti cura di te.</p>
                     </article>
                 </div>
             </div>
@@ -131,18 +120,18 @@
         <section class="section download-section" aria-labelledby="download-title">
             <div class="download-card shell" data-reveal>
                 <div>
-                    <p class="eyebrow">Inizia quando vuoi</p>
-                    <h2 id="download-title">Scarica iMeditazione gratuitamente.</h2>
-                    <p>Nessun account e nessun abbonamento. Le pratiche restano disponibili anche offline.</p>
+                    <p class="eyebrow">Gratis, senza registrazione, e completamente offline</p>
+                    <h2 id="download-title">iMeditazione è totalmente gratuita.</h2>
+                    <p>Nessun abbonamento da sottoscrivere e nessun account da creare. Nessuna connessione richiesta: funziona totalmente offline.</p>
                 </div>
                 <div class="store-row" aria-label="Disponibilità dell'app">
                     <a class="store-badge" href="https://apps.apple.com/app/imeditazione/id1481745712" aria-label="Scarica iMeditazione dall'App Store">
                         <img src="/static/images/app-store.png" alt="" width="30" height="34">
                         <span><small>Scarica su</small><strong>App Store</strong></span>
                     </a>
-                    <span class="store-badge is-disabled" role="link" aria-disabled="true" aria-label="Google Play, non disponibile">
+                    <span class="store-badge is-disabled" role="link" aria-disabled="true" aria-label="Google Play: non disponibile">
                         <img src="/static/images/play-store.png" alt="" width="29" height="32">
-                        <span><small>Non disponibile su</small><strong>Google Play</strong></span>
+                        <span><small>Google Play</small><strong>Non disponibile</strong></span>
                     </span>
                 </div>
             </div>
