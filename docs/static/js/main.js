@@ -24,7 +24,7 @@
         autoplay: true,
         autoplayTimeout: 4000,
         smartSpeed: 1000,
-        navText: ['<img src="images/arrow-right.png" alt="">', '<img src="images/arrow-left.png" alt="">'],
+        navText: ['<i class="zmdi zmdi-long-arrow-right zmdi-hc-3x" aria-hidden="true"></i>', '<i class="zmdi zmdi-long-arrow-left zmdi-hc-3x" aria-hidden="true"></i>'],
         responsive: {
             0: {
                 items: 1,
@@ -47,7 +47,7 @@
         autoplay: true,
         autoplayTimeout: 4000,
         smartSpeed: 1000,
-        navText: ['<img src="images/arrow-right.png" alt="">', '<img src="images/arrow-left.png" alt="">'],
+        navText: ['<i class="zmdi zmdi-long-arrow-right zmdi-hc-3x" aria-hidden="true"></i>', '<i class="zmdi zmdi-long-arrow-left zmdi-hc-3x" aria-hidden="true"></i>'],
         responsive: {
             0: {
                 items: 1,
@@ -79,7 +79,7 @@
         autoplay: true,
         autoplayTimeout: 4000,
         smartSpeed: 1000,
-        navText: ['<img src="images/arrow-right.png" alt="">', '<img src="images/arrow-left.png" alt="">'],
+        navText: ['<i class="zmdi zmdi-long-arrow-right zmdi-hc-3x" aria-hidden="true"></i>', '<i class="zmdi zmdi-long-arrow-left zmdi-hc-3x" aria-hidden="true"></i>'],
         responsive: {
             0: {
                 items: 1,
