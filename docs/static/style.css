@@ -202,12 +202,12 @@ input:-webkit-autofill:focus {
 }
 
 .section-padding-top {
-    padding-top: 120px;
+    padding-top: 160px;
 }
 
 .section-padding {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 160px;
+    padding-bottom: 160px;
 }
 
 .icon-list,
