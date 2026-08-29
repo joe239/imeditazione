@@ -958,7 +958,7 @@ textarea.form_control {
 /*-- 16. Download-Area --*/
 
 .download-area {
-    background: url('images/download-bg.jpg') no-repeat scroll left center / auto 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 40%, #ffffff 52%) no-repeat scroll left center / 100% 100%, url('images/download-bg.jpg') no-repeat scroll left center / auto 100%;
 }
 
 /*-- 17. Footer-Area --*/
